@@ -1,95 +1,80 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { Box, Button, Container, Typography } from "@mui/material";
+import { useState } from "react";
+import data from "@/data.json";
+import Quiz from "@/components/Quiz";
+import { Question } from "@/types/QuestionType";
+
+const quizzes = ['JavaScript', 'React'];
 
 export default function Home() {
+  const [questions] = useState<Question[]>(data);
+  const [chosenQuiz, setChosenQuiz] = useState<string | null>(null);
+
+  const handleChoseQuizClick = (type: string) => {
+    setChosenQuiz(type);
+  }
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <Box sx={{
+      bgcolor: chosenQuiz ? 'background.default' : 'background.paper',
+      width: '100%',
+      height: '100vh',
+      display: "flex",
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      }}
+    >
+      {!chosenQuiz && (
+        <Container maxWidth='lg' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+          <Typography variant="h4" color='primary'>Choose a quiz and see how good you are!</Typography>
+          <Box sx={{ display: 'flex', gap: 3, width: '100%', justifyContent: 'center', flexWrap: 'wrap' }}>
+            {quizzes.map(quiz => (
+              <Button
+              key={quiz}
+              onClick={() => handleChoseQuizClick(quiz)}
+              variant="contained"
+              color="secondary"
+              sx={{
+                textTransform: 'initial',
+                width: 300,
+                height: 300,
+                fontSize: 30,
+              }}
+              >{quiz}</Button>
+            ))}
+          </Box>
+        </Container>
+      )}
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      {chosenQuiz && (
+        <Container sx={{
+          bgcolor: 'background.paper',
+          borderRadius: 3,
+          padding: 2,
+          width: '50%',
+          minHeight: 'min-content',
+        }}>
+          {chosenQuiz === 'JavaScript' && (
+            <Box>
+              <Typography variant="h3" color="primary.main" sx={{ marginBottom: 3 }}>JavaScript Quiz</Typography>
+              <Box>
+                <Quiz questions={questions} />
+              </Box>
+            </Box>
+          )}
+          {chosenQuiz === 'React' && (
+            <Box>
+              <Typography variant="h3" color="primary.main" sx={{ marginBottom: 3 }}>React Quiz</Typography>
+              <Box>
+                <Quiz questions={questions} />
+              </Box>
+            </Box>
+          )}
+        </Container>
+      )}
+    </Box>
   );
 }

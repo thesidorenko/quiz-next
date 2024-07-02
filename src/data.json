@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is NOT a valid JavaScript data type?",
+    "answers": [
+      {
+        "text": "Boolean",
+        "isCorrect": false
+      },
+      {
+        "text": "Number",
+        "isCorrect": false
+      },
+      {
+        "text": "Undefined",
+        "isCorrect": false
+      },
+      {
+        "text": "Float",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "How do you create a function in JavaScript?",
+    "answers": [
+      {
+        "text": "function myFunction()",
+        "isCorrect": true
+      },
+      {
+        "text": "def myFunction()",
+        "isCorrect": false
+      },
+      {
+        "text": "create myFunction()",
+        "isCorrect": false
+      },
+      {
+        "text": "function:myFunction()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+    "answers": [
+      {
+        "text": "<script href='script.js'>",
+        "isCorrect": false
+      },
+      {
+        "text": "<script src='script.js'>",
+        "isCorrect": true
+      },
+      {
+        "text": "<script ref='script.js'>",
+        "isCorrect": false
+      },
+      {
+        "text": "<script name='script.js'>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Which method can be used to create a new array by transforming each element in an array?",
+    "answers": [
+      {
+        "text": "map()",
+        "isCorrect": true
+      },
+      {
+        "text": "reduce()",
+        "isCorrect": false
+      },
+      {
+        "text": "filter()",
+        "isCorrect": false
+      },
+      {
+        "text": "forEach()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which of the following array methods removes the last element from an array and returns that element?",
+    "answers": [
+      {
+        "text": "push()",
+        "isCorrect": false
+      },
+      {
+        "text": "pop()",
+        "isCorrect": true
+      },
+      {
+        "text": "shift()",
+        "isCorrect": false
+      },
+      {
+        "text": "unshift()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Which method is used to create a new array with all elements that pass the test implemented by the provided function?",
+    "answers": [
+      {
+        "text": "forEach()",
+        "isCorrect": false
+      },
+      {
+        "text": "filter()",
+        "isCorrect": true
+      },
+      {
+        "text": "map()",
+        "isCorrect": false
+      },
+      {
+        "text": "reduce()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Which method is used to convert a JSON string into a JavaScript object?",
+    "answers": [
+      {
+        "text": "JSON.parse()",
+        "isCorrect": true
+      },
+      {
+        "text": "JSON.stringify()",
+        "isCorrect": false
+      },
+      {
+        "text": "JSON.convert()",
+        "isCorrect": false
+      },
+      {
+        "text": "JSON.toObject()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "answers": [
+      {
+        "text": "var",
+        "isCorrect": false
+      },
+      {
+        "text": "let",
+        "isCorrect": false
+      },
+      {
+        "text": "const",
+        "isCorrect": false
+      },
+      {
+        "text": "All of the above",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Which method is used to join two or more arrays in JavaScript?",
+    "answers": [
+      {
+        "text": "merge()",
+        "isCorrect": false
+      },
+      {
+        "text": "combine()",
+        "isCorrect": false
+      },
+      {
+        "text": "concat()",
+        "isCorrect": true
+      },
+      {
+        "text": "join()",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What will '2' + 3 return in JavaScript?",
+    "answers": [
+      {
+        "text": "23",
+        "isCorrect": true
+      },
+      {
+        "text": "5",
+        "isCorrect": false
+      },
+      {
+        "text": "NaN",
+        "isCorrect": false
+      },
+      {
+        "text": "undefined",
+        "isCorrect": false
+      }
+    ]
+  }
+]
