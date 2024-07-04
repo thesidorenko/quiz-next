@@ -1,0 +1,446 @@
+{
+  "javascript": [
+    {
+      "id": 1,
+      "question": "Which of the following is NOT a valid JavaScript data type?",
+      "answers": [
+        {
+          "text": "Boolean",
+          "isCorrect": false
+        },
+        {
+          "text": "Number",
+          "isCorrect": false
+        },
+        {
+          "text": "Undefined",
+          "isCorrect": false
+        },
+        {
+          "text": "Float",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How do you create a function in JavaScript?",
+      "answers": [
+        {
+          "text": "function myFunction()",
+          "isCorrect": true
+        },
+        {
+          "text": "def myFunction()",
+          "isCorrect": false
+        },
+        {
+          "text": "create myFunction()",
+          "isCorrect": false
+        },
+        {
+          "text": "function:myFunction()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+      "answers": [
+        {
+          "text": "<script href='script.js'>",
+          "isCorrect": false
+        },
+        {
+          "text": "<script src='script.js'>",
+          "isCorrect": true
+        },
+        {
+          "text": "<script ref='script.js'>",
+          "isCorrect": false
+        },
+        {
+          "text": "<script name='script.js'>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which method can be used to create a new array by transforming each element in an array?",
+      "answers": [
+        {
+          "text": "map()",
+          "isCorrect": true
+        },
+        {
+          "text": "reduce()",
+          "isCorrect": false
+        },
+        {
+          "text": "filter()",
+          "isCorrect": false
+        },
+        {
+          "text": "forEach()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which of the following array methods removes the last element from an array and returns that element?",
+      "answers": [
+        {
+          "text": "push()",
+          "isCorrect": false
+        },
+        {
+          "text": "pop()",
+          "isCorrect": true
+        },
+        {
+          "text": "shift()",
+          "isCorrect": false
+        },
+        {
+          "text": "unshift()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Which method is used to create a new array with all elements that pass the test implemented by the provided function?",
+      "answers": [
+        {
+          "text": "forEach()",
+          "isCorrect": false
+        },
+        {
+          "text": "filter()",
+          "isCorrect": true
+        },
+        {
+          "text": "map()",
+          "isCorrect": false
+        },
+        {
+          "text": "reduce()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which method is used to convert a JSON string into a JavaScript object?",
+      "answers": [
+        {
+          "text": "JSON.parse()",
+          "isCorrect": true
+        },
+        {
+          "text": "JSON.stringify()",
+          "isCorrect": false
+        },
+        {
+          "text": "JSON.convert()",
+          "isCorrect": false
+        },
+        {
+          "text": "JSON.toObject()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "answers": [
+        {
+          "text": "var",
+          "isCorrect": false
+        },
+        {
+          "text": "let",
+          "isCorrect": false
+        },
+        {
+          "text": "const",
+          "isCorrect": false
+        },
+        {
+          "text": "All of the above",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which method is used to join two or more arrays in JavaScript?",
+      "answers": [
+        {
+          "text": "merge()",
+          "isCorrect": false
+        },
+        {
+          "text": "combine()",
+          "isCorrect": false
+        },
+        {
+          "text": "concat()",
+          "isCorrect": true
+        },
+        {
+          "text": "join()",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What will '2' + 3 return in JavaScript?",
+      "answers": [
+        {
+          "text": "23",
+          "isCorrect": true
+        },
+        {
+          "text": "5",
+          "isCorrect": false
+        },
+        {
+          "text": "NaN",
+          "isCorrect": false
+        },
+        {
+          "text": "undefined",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "react": [
+    {
+      "id": 1,
+      "question": "Which method in React is used to change the state of a component?",
+      "answers": [
+        {
+          "text": "setState",
+          "isCorrect": true
+        },
+        {
+          "text": "updateState",
+          "isCorrect": false
+        },
+        {
+          "text": "changeState",
+          "isCorrect": false
+        },
+        {
+          "text": "modifyState",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What is React's virtual DOM?",
+      "answers": [
+        {
+          "text": "A direct copy of the real DOM",
+          "isCorrect": false
+        },
+        {
+          "text": "A function to update the real DOM",
+          "isCorrect": false
+        },
+        {
+          "text": "A special type of component",
+          "isCorrect": false
+        },
+        {
+          "text": "A lightweight representation of the real DOM",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which lifecycle method is called after a component is rendered for the first time?",
+      "answers": [
+        {
+          "text": "componentWillMount",
+          "isCorrect": false
+        },
+        {
+          "text": "componentDidMount",
+          "isCorrect": true
+        },
+        {
+          "text": "componentDidUpdate",
+          "isCorrect": false
+        },
+        {
+          "text": "componentWillUpdate",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which hook is used to handle side effects in functional components?",
+      "answers": [
+        {
+          "text": "useState",
+          "isCorrect": false
+        },
+        {
+          "text": "useContext",
+          "isCorrect": false
+        },
+        {
+          "text": "useEffect",
+          "isCorrect": true
+        },
+        {
+          "text": "useReducer",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of `React.Fragment`?",
+      "answers": [
+        {
+          "text": "To create stateful components",
+          "isCorrect": false
+        },
+        {
+          "text": "To memoize expensive calculations",
+          "isCorrect": false
+        },
+        {
+          "text": "To manage side effects in components",
+          "isCorrect": false
+        },
+        {
+          "text": "To return multiple elements without adding extra nodes to the DOM",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What does 'React.memo' do?",
+      "answers": [
+        {
+          "text": "Prevents unnecessary re-renders of a component",
+          "isCorrect": true
+        },
+        {
+          "text": "Handles state management in a component",
+          "isCorrect": false
+        },
+        {
+          "text": "Allows you to create context in a component",
+          "isCorrect": false
+        },
+        {
+          "text": "Runs side effects in a component",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which hook would you use to memoize a value in React?",
+      "answers": [
+        {
+          "text": "useState",
+          "isCorrect": false
+        },
+        {
+          "text": "useEffect",
+          "isCorrect": false
+        },
+        {
+          "text": "useCallback",
+          "isCorrect": false
+        },
+        {
+          "text": "useMemo",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How do you handle forms in React?",
+      "answers": [
+        {
+          "text": "Using controlled components",
+          "isCorrect": true
+        },
+        {
+          "text": "Using uncontrolled components",
+          "isCorrect": false
+        },
+        {
+          "text": "Using context API",
+          "isCorrect": false
+        },
+        {
+          "text": "Using Redux",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What does the 'useReducer' hook do in React?",
+      "answers": [
+        {
+          "text": "Handles side effects in functional components",
+          "isCorrect": false
+        },
+        {
+          "text": "Manages more complex state logic compared to 'useState'",
+          "isCorrect": true
+        },
+        {
+          "text": "Provides context to child components",
+          "isCorrect": false
+        },
+        {
+          "text": "Runs code after the component renders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What is a common use case for using React Portals?",
+      "answers": [
+        {
+          "text": "To manage component state",
+          "isCorrect": false
+        },
+        {
+          "text": "To render children into a DOM node outside of the parent component’s hierarchy",
+          "isCorrect": true
+        },
+        {
+          "text": "To handle form submissions",
+          "isCorrect": false
+        },
+        {
+          "text": "To fetch data from an API",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
