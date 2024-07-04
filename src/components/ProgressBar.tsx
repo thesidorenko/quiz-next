@@ -1,4 +1,4 @@
-import { LinearProgress, Box, Typography } from '@mui/material';
+import { LinearProgress, Box } from '@mui/material';
 
 type ProgressBarProps = {
   currentQuestion: number,

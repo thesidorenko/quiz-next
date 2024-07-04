@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
-import "./globals.css";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
+
 import theme from '../theme';
 
 const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png"  />
+      </head>
       <body className={roboto_mono.className} style={{ margin: 0}}>
         <AppRouterCacheProvider>
          <ThemeProvider theme={theme}>

@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Box, Button, Container, Typography } from "@mui/material";
 import ReplayIcon from '@mui/icons-material/Replay';
+import { Box, Button, Container, Typography } from "@mui/material";
+
+import theme from "@/theme";
 import Score from "./Score";
 import ProgressBar from "./ProgressBar";
 import { Answer } from "@/types/AnswerType";
@@ -74,6 +76,9 @@ const Quiz = ({ title, questions }: QuizProps) => {
         padding: 2,
         width: '50%',
         minHeight: 'min-content',
+        [theme.breakpoints.down('md')]: {
+          width: '90%',
+        },
       }}>
         <Box>
           <Typography variant="h3" color="primary.main" sx={{ marginBottom: 3 }}>{title} Quiz</Typography>

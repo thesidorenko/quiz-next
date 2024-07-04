@@ -1,5 +1,8 @@
-import { Button } from "@mui/material";
+"use client";
+
 import Link from "next/link";
+import theme from "@/theme";
+import { Button } from "@mui/material";
 
 type QuizTileProps = {
   quiz: string,
@@ -16,6 +19,10 @@ const QuizTile = ({ quiz }: QuizTileProps) => {
         width: 300,
         height: 300,
         fontSize: 30,
+        [theme.breakpoints.down('sm')]: {
+          width: 200,
+          height: 200,
+        },
       }}
     >{quiz}</Button>
   </Link>
