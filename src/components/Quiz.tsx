@@ -88,9 +88,15 @@ const Quiz = ({ title, questions }: QuizProps) => {
                     return (
                       <Button
                         key={index}
-                        disabled={!!clickedAnswerIndex}
+                        disabled={clickedAnswerIndex !== null}
                         onClick={() => handleAnswerOptionClick(index, answer.isCorrect)}
-                        sx={{ bgcolor: answerStyles, border: 1, borderColor: 'background.default', textTransform: "initial", fontSize: '1rem' }}
+                        sx={{
+                          bgcolor: answerStyles,
+                          border: 1,
+                          borderColor: 'background.default',
+                          textTransform: "initial",
+                          fontSize: '1rem',
+                        }}
                         color='secondary'
                       >
                         {answer.text}
