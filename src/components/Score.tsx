@@ -1,3 +1,4 @@
+import { getScoreMessage } from "@/utils/getScoreMessage";
 import { Box, Button, Typography } from "@mui/material";
 import { useRouter } from "next/navigation";
 
@@ -13,6 +14,9 @@ const Score = ({ score, questionsLength }: ScoreProps) => {
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, alignItems: 'center' }}>
         <Typography variant="h5">Your Score: {score}/{questionsLength}</Typography>
+        <Typography variant="h6" color="warning.main">
+          {getScoreMessage(score)}
+        </Typography>
         <Box sx={{ display: 'flex', gap: 3 }}>
           <Button
             onClick={() => router.push('/')}
