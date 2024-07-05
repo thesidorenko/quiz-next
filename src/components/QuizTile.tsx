@@ -11,20 +11,20 @@ type QuizTileProps = {
 const QuizTile = ({ quiz }: QuizTileProps) => {
   return (
     <Link href={`${quiz}-quiz`}>
-    <Button
-      variant="contained"
-      color="secondary"
-      sx={{
-        textTransform: 'initial',
-        width: 300,
-        height: 300,
-        fontSize: 30,
-        [theme.breakpoints.down('sm')]: {
-          width: 200,
-          height: 200,
-        },
-      }}
-    >{quiz}</Button>
+      <Button
+        variant="contained"
+        color="secondary"
+        sx={{
+          textTransform: 'initial',
+          width: 250,
+          height: 250,
+          fontSize: 30,
+          [theme.breakpoints.down('sm')]: {
+            width: 200,
+            height: 200,
+          },
+        }}
+      >{quiz}</Button>
   </Link>
   )
 }
