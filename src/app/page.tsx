@@ -1,7 +1,7 @@
-import QuizTile from "@/components/QuizTile";
 import { Box, Container, Typography } from "@mui/material";
 
-const quizzes = ['JavaScript', 'React'];
+import QuizTile from "@/components/QuizTile";
+import quizzes from '@/api/quizzes.json';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Container maxWidth='lg' sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
         <Typography variant="h4" color='primary'>Choose a quiz and see how good you are!</Typography>
         <Box sx={{ display: 'flex', gap: 3, width: '100%', justifyContent: 'center', flexWrap: 'wrap' }}>
-          {quizzes.map(quiz => <QuizTile key={quiz} quiz={quiz} />)}
+          {quizzes.map(quiz => <QuizTile key={quiz.id} quiz={quiz} />)}
         </Box>
       </Container>
     </Box>

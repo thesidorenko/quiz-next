@@ -6,12 +6,12 @@ import data from '@/api/data.json'
 import Quiz from "@/components/Quiz";
 import { Question } from "@/types/QuestionType";
 
-const ReactQuizPage = () => {
-  const [questions] = useState<Question[]>(data.react);
+const TypescriptQuizPage = () => {
+  const [questions] = useState<Question[]>(data.typescript);
 
   return (
-    <Quiz title='React' questions={questions} />
+    <Quiz title='TypeScript' questions={questions} />
   )
 }
 
-export default ReactQuizPage;
+export default TypescriptQuizPage;

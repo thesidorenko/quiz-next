@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "path": "javascript-quiz",
+    "title": "JavaScript"
+  },
+  {
+    "id": 2,
+    "path": "typescript-quiz",
+    "title": "TypeScript"
+  },
+  {
+    "id": 3,
+    "path": "react-quiz",
+    "title": "React"
+  }
+]

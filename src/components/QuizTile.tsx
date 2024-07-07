@@ -3,14 +3,15 @@
 import Link from "next/link";
 import theme from "@/theme";
 import { Button } from "@mui/material";
+import { Quiz } from "@/types/QuizType";
 
 type QuizTileProps = {
-  quiz: string,
+  quiz: Quiz,
 }
 
 const QuizTile = ({ quiz }: QuizTileProps) => {
   return (
-    <Link href={`${quiz}-quiz`}>
+    <Link href={quiz.path}>
       <Button
         variant="contained"
         color="secondary"
@@ -24,7 +25,7 @@ const QuizTile = ({ quiz }: QuizTileProps) => {
             height: 200,
           },
         }}
-      >{quiz}</Button>
+      >{quiz.title}</Button>
   </Link>
   )
 }

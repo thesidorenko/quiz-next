@@ -221,6 +221,228 @@
       ]
     }
   ],
+  "typescript": [
+    {
+      "id": 1,
+      "question": "Which of the following is NOT a type in TypeScript?",
+      "answers": [
+        {
+          "text": "number",
+          "isCorrect": false
+        },
+        {
+          "text": "string",
+          "isCorrect": false
+        },
+        {
+          "text": "decimal",
+          "isCorrect": true
+        },
+        {
+          "text": "boolean",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How do you define an array of strings in TypeScript?",
+      "answers": [
+        {
+          "text": "let names: string[];",
+          "isCorrect": true
+        },
+        {
+          "text": "let names: [string];",
+          "isCorrect": false
+        },
+        {
+          "text": "let names: array<string>;",
+          "isCorrect": false
+        },
+        {
+          "text": "let names: string[array];",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "How do you specify a function parameter with an optional value in TypeScript?",
+      "answers": [
+        {
+          "text": "parameter!",
+          "isCorrect": false
+        },
+        {
+          "text": "parameter?",
+          "isCorrect": true
+        },
+        {
+          "text": "optional parameter",
+          "isCorrect": false
+        },
+        {
+          "text": "parameter.opt",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How do you specify a type for a function that returns a string?",
+      "answers": [
+        {
+          "text": "function getString() -> string",
+          "isCorrect": false
+        },
+        {
+          "text": "function getString(): String",
+          "isCorrect": false
+        },
+        {
+          "text": "function getString() -> String",
+          "isCorrect": false
+        },
+        {
+          "text": "function getString(): string",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is the correct way to define an interface in TypeScript?",
+      "answers": [
+        {
+          "text": "interface Person = { name: string; age: number; }",
+          "isCorrect": false
+        },
+        {
+          "text": "interface Person: { name: string; age: number; }",
+          "isCorrect": false
+        },
+        {
+          "text": "interface Person { name: string; age: number; }",
+          "isCorrect": true
+        },
+        {
+          "text": "interface Person [ name: string; age: number; ]",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Which TypeScript feature provides a way to group related values?",
+      "answers": [
+        {
+          "text": "Generics",
+          "isCorrect": false
+        },
+        {
+          "text": "Enums",
+          "isCorrect": true
+        },
+        {
+          "text": "Interfaces",
+          "isCorrect": false
+        },
+        {
+          "text": "Modules",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How do you define a union type in TypeScript?",
+      "answers": [
+        {
+          "text": "let value: type1 | type2;",
+          "isCorrect": true
+        },
+        {
+          "text": "let value: type1 || type2;",
+          "isCorrect": false
+        },
+        {
+          "text": "let value: type1 or type2;",
+          "isCorrect": false
+        },
+        {
+          "text": "let value: type1/type2;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does the 'abstract' keyword do in TypeScript?",
+      "answers": [
+        {
+          "text": "Defines a private property",
+          "isCorrect": false
+        },
+        {
+          "text": "Defines a read-only property",
+          "isCorrect": false
+        },
+        {
+          "text": "Defines a static method",
+          "isCorrect": false
+        },
+        {
+          "text": "Defines a method that must be implemented by subclasses",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the default access modifier for properties and methods in a TypeScript class?",
+      "answers": [
+        {
+          "text": "private",
+          "isCorrect": false
+        },
+        {
+          "text": "public",
+          "isCorrect": true
+        },
+        {
+          "text": "protected",
+          "isCorrect": false
+        },
+        {
+          "text": "readonly",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What does the '!' symbol mean in TypeScript when placed after a variable?",
+      "answers": [
+        {
+          "text": "Indicates the variable is optional",
+          "isCorrect": false
+        },
+        {
+          "text": "Indicates the variable is read-only",
+          "isCorrect": false
+        },
+        {
+          "text": "Indicates the variable is never null or undefined",
+          "isCorrect": true
+        },
+        {
+          "text": "Indicates the variable is protected",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
   "react": [
     {
       "id": 1,

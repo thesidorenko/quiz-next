@@ -1,7 +1,7 @@
 'use client'
 
 import Quiz from "@/components/Quiz";
-import data from '../../../data.json'
+import data from '@/api/data.json';
 import { useState } from "react";
 import { Question } from "@/types/QuestionType";
 
