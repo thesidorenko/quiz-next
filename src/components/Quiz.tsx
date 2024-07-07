@@ -63,11 +63,12 @@ const Quiz = ({ title, questions }: QuizProps) => {
     };
 
     const handleRestartButton = () => {
-      if (confirm('Are you sure? You lose your progress')) {
+      if (confirm('Are you sure? You lose your progress.')) {
         setScore(0);
         setShowScore(false);
         setCurrentQuestionIndex(0);
         setClickedAnswerIndex(null);
+        setTimeLeft('10:00');
       }
     };
 

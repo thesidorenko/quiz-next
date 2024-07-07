@@ -1,16 +1,26 @@
 [
   {
     "id": 1,
+    "path": "html-quiz",
+    "title": "HTML"
+  },
+  {
+    "id": 2,
+    "path": "css-quiz",
+    "title": "CSS"
+  },
+  {
+    "id": 3,
     "path": "javascript-quiz",
     "title": "JavaScript"
   },
   {
-    "id": 2,
+    "id": 4,
     "path": "typescript-quiz",
     "title": "TypeScript"
   },
   {
-    "id": 3,
+    "id": 5,
     "path": "react-quiz",
     "title": "React"
   }

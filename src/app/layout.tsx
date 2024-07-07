@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png"  />
       </head>
-      <body className={roboto_mono.className} style={{ margin: 0}}>
+      <body className={roboto_mono.className} style={{ margin: 0, backgroundColor: '#f5f5f5' }}>
         <AppRouterCacheProvider>
          <ThemeProvider theme={theme}>
             {children}

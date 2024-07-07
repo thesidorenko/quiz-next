@@ -1,4 +1,277 @@
 {
+  "html": [
+    {
+      "id": 1,
+      "question": "Choose the correct HTML element for the largest heading:",
+      "answers": [
+        { "text": "<heading>", "isCorrect": false },
+        { "text": "<h6>", "isCorrect": false },
+        { "text": "<h1>", "isCorrect": true },
+        { "text": "<h2>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What is the correct HTML element for inserting a line break?",
+      "answers": [
+        { "text": "<br>", "isCorrect": true },
+        { "text": "<lb>", "isCorrect": false },
+        { "text": "<break>", "isCorrect": false },
+        { "text": "<newline>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is the correct HTML for creating a hyperlink?",
+      "answers": [
+        {
+          "text": "<a url='http://www.example.com'>Example</a>",
+          "isCorrect": false
+        },
+        {
+          "text": "<a href='http://www.example.com'>Example</a>",
+          "isCorrect": true
+        },
+        {
+          "text": "<a link='http://www.example.com'>Example</a>",
+          "isCorrect": false
+        },
+        {
+          "text": "<link href='http://www.example.com'>Example</link>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How can you open a link in a new tab/browser window?",
+      "answers": [
+        { "text": "<a href='url' new>", "isCorrect": false },
+        { "text": "<a href='url' target='new'>", "isCorrect": false },
+        { "text": "<a href='url' target='new_tab'>", "isCorrect": false },
+        { "text": "<a href='url' target='_blank'>", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How can you make a numbered list?",
+      "answers": [
+        { "text": "<ul>", "isCorrect": false },
+        { "text": "<ol>", "isCorrect": true },
+        { "text": "<list>", "isCorrect": false },
+        { "text": "<dl>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "How can you make a bulleted list?",
+      "answers": [
+        { "text": "<ul>", "isCorrect": true },
+        { "text": "<ol>", "isCorrect": false },
+        { "text": "<list>", "isCorrect": false },
+        { "text": "<dl>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What is the correct HTML for inserting an image?",
+      "answers": [
+        { "text": "<image src='image.gif' alt='MyImage'>", "isCorrect": false },
+        { "text": "<img src='image.gif' alt='MyImage'>", "isCorrect": true },
+        { "text": "<img href='image.gif' alt='MyImage'>", "isCorrect": false },
+        { "text": "<img alt='image.gif' src='MyImage'>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the <head> element in HTML?",
+      "answers": [
+        {
+          "text": "To define the main content of the document",
+          "isCorrect": false
+        },
+        {
+          "text": "To define the title, styles, scripts, and meta information",
+          "isCorrect": true
+        },
+        { "text": "To define the header of the document", "isCorrect": false },
+        { "text": "To define the sidebar content", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What does the <aside> element represent?",
+      "answers": [
+        {
+          "text": "Content that is tangentially related to the main content",
+          "isCorrect": true
+        },
+        { "text": "Main content of the document", "isCorrect": false },
+        { "text": "Footer content", "isCorrect": false },
+        { "text": "Header content", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Which HTML attribute is used to specify that an input field must be filled out?",
+      "answers": [
+        { "text": "placeholder", "isCorrect": false },
+        { "text": "validate", "isCorrect": false },
+        { "text": "mandatory", "isCorrect": false },
+        { "text": "required", "isCorrect": true }
+      ]
+    }
+  ],
+  "css": [
+    {
+      "id": 1,
+      "question": "Which CSS property controls the text size?",
+      "answers": [
+        { "text": "font-size", "isCorrect": true },
+        { "text": "text-size", "isCorrect": false },
+        { "text": "font-style", "isCorrect": false },
+        { "text": "text-style", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How do you select an element with id 'header' in CSS?",
+      "answers": [
+        { "text": ".header", "isCorrect": false },
+        { "text": "header", "isCorrect": false },
+        { "text": "#header", "isCorrect": true },
+        { "text": "*header", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which CSS property is used to change the space inside the border of an element?",
+      "answers": [
+        { "text": "margin", "isCorrect": false },
+        { "text": "border-spacing", "isCorrect": false },
+        { "text": "padding", "isCorrect": true },
+        { "text": "spacing", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "How do you select all elements with class 'intro' in CSS?",
+      "answers": [
+        { "text": "#intro", "isCorrect": false },
+        { "text": "*intro", "isCorrect": false },
+        { "text": "intro", "isCorrect": false },
+        { "text": ".intro", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "How do you create a CSS custom property (variable)?",
+      "answers": [
+        { "text": "var-main-color: #333;", "isCorrect": false },
+        { "text": "--main-color: #333;", "isCorrect": true },
+        { "text": "$main-color: #333;", "isCorrect": false },
+        { "text": "@main-color: #333;", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is the default value of the 'position' property in CSS?",
+      "answers": [
+        { "text": "static", "isCorrect": true },
+        { "text": "relative", "isCorrect": false },
+        { "text": "absolute", "isCorrect": false },
+        { "text": "fixed", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What does the 'position: sticky;' CSS property do?",
+      "answers": [
+        {
+          "text": "It makes an element scroll with the content until a specified point, where it then becomes fixed",
+          "isCorrect": true
+        },
+        {
+          "text": "It makes an element fixed at a specific position",
+          "isCorrect": false
+        },
+        {
+          "text": "It makes an element float above the content",
+          "isCorrect": false
+        },
+        {
+          "text": "It hides an element and reveals it on scroll",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does 'flex-wrap: wrap;' do?",
+      "answers": [
+        {
+          "text": "Makes flex items overlap each other",
+          "isCorrect": false
+        },
+        {
+          "text": "Centers flex items horizontally within their container",
+          "isCorrect": false
+        },
+        {
+          "text": "Forces flex items to wrap onto multiple lines if necessary",
+          "isCorrect": true
+        },
+        {
+          "text": "Shrinks flex items to fit their container",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How do you create three equal-width columns in a grid container?",
+      "answers": [
+        {
+          "text": "grid-columns: repeat(3, auto);",
+          "isCorrect": false
+        },
+        {
+          "text": "grid-columns: 1fr 1fr 1fr;",
+          "isCorrect": false
+        },
+        {
+          "text": "grid-template-columns: repeat(auto, 1fr);",
+          "isCorrect": false
+        },
+        {
+          "text": "grid-template-columns: 1fr 1fr 1fr;",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "What are CSS media queries?",
+      "answers": [
+        {
+          "text": "CSS media queries create animations and transitions between states.",
+          "isCorrect": false
+        },
+        {
+          "text": "CSS media queries add shadows and glows to elements.",
+          "isCorrect": false
+        },
+        {
+          "text": "CSS media queries apply different styles based on device or viewport characteristics like width, height, and orientation.",
+          "isCorrect": true
+        },
+        {
+          "text": "CSS media queries align elements in a table-like structure.",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
   "javascript": [
     {
       "id": 1,
