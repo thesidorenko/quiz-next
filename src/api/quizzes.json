@@ -23,5 +23,10 @@
     "id": 5,
     "path": "react-quiz",
     "title": "React"
+  },
+  {
+    "id": 6,
+    "path": "nodejs-quiz",
+    "title": "NodeJS"
   }
 ]

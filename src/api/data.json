@@ -937,5 +937,149 @@
         }
       ]
     }
+  ],
+  "nodejs": [
+    {
+      "id": 1,
+      "question": "What is Node.js?",
+      "answers": [
+        { "text": "A database management system", "isCorrect": false },
+        { "text": "A JavaScript runtime environment", "isCorrect": true },
+        { "text": "A front-end framework", "isCorrect": false },
+        { "text": "A programming language", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How do you export a module in Node.js using CommonJS?",
+      "answers": [
+        { "text": "module.export = myModule;", "isCorrect": false },
+        { "text": "exports.myModule = myModule;", "isCorrect": false },
+        { "text": "export myModule;", "isCorrect": false },
+        { "text": "module.exports = myModule;", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is npm?",
+      "answers": [
+        { "text": "Node Project Manager", "isCorrect": false },
+        { "text": "Node Package Manager", "isCorrect": true },
+        { "text": "Node Programming Module", "isCorrect": false },
+        { "text": "Node Package Module", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which module in Node.js is used for interacting with the file system?",
+      "answers": [
+        { "text": "fs", "isCorrect": true },
+        { "text": "file", "isCorrect": false },
+        { "text": "file-system", "isCorrect": false },
+        { "text": "file-manager", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is Express.js?",
+      "answers": [
+        {
+          "text": "A web application framework for Node.js",
+          "isCorrect": true
+        },
+        { "text": "A database management system", "isCorrect": false },
+        { "text": "A front-end library", "isCorrect": false },
+        { "text": "A module for handling file operations", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is middleware in Express.js?",
+      "answers": [
+        {
+          "text": "Functions for handling database queries",
+          "isCorrect": false
+        },
+        {
+          "text": "Functions that execute only after a request is processed",
+          "isCorrect": false
+        },
+        {
+          "text": "Functions that have access to the request and response objects",
+          "isCorrect": true
+        },
+        { "text": "Functions used for encryption", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What is a RESTful API?",
+      "answers": [
+        {
+          "text": "An architectural style for designing networked applications",
+          "isCorrect": true
+        },
+        {
+          "text": "A programming language used with Express.js",
+          "isCorrect": false
+        },
+        { "text": "A database management system", "isCorrect": false },
+        { "text": "A module for handling HTTP requests", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "How do you handle HTML forms in Express.js?",
+      "answers": [
+        { "text": "Using 'express-session' middleware", "isCorrect": false },
+        { "text": "Using 'express.static' middleware", "isCorrect": false },
+        { "text": "Using 'cookie-parser' middleware", "isCorrect": false },
+        {
+          "text": "Using 'body-parser' middleware for parsing form data",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "How do you manage environment variables in Express.js?",
+      "answers": [
+        { "text": "Using 'express-env' middleware", "isCorrect": false },
+        {
+          "text": "Using 'config' package for configuration management",
+          "isCorrect": false
+        },
+        {
+          "text": "Using 'dotenv' package to load variables from a .env file",
+          "isCorrect": true
+        },
+        {
+          "text": "Using 'npm start' command with environment flags",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "How does bcrypt hash passwords?",
+      "answers": [
+        {
+          "text": "By encrypting the password with a private key",
+          "isCorrect": false
+        },
+        {
+          "text": "By repeatedly hashing the password with a salt",
+          "isCorrect": true
+        },
+        {
+          "text": "By compressing the password into a hash value",
+          "isCorrect": false
+        },
+        {
+          "text": "By encoding the password as a Base64 string",
+          "isCorrect": false
+        }
+      ]
+    }
   ]
 }
