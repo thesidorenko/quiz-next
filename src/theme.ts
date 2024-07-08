@@ -42,6 +42,7 @@ const theme = createTheme({
     },
     secondary: {
       main: teal[600],
+      dark: teal[800]
     },
     background: {
       default: blueGrey[100],

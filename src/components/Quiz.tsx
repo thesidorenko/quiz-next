@@ -72,6 +72,11 @@ const Quiz = ({ title, questions }: QuizProps) => {
       }
     };
 
+    const handleReadmoreButton = () => {
+      const query = questions[currentQuestionIndex].question;
+      window.open(`http://www.google.com/search?q=${query}`);
+    }
+
     const getAnswerStyles = (index: number, answer: Answer) => {
       if (index === clickedAnswerIndex && answer.isCorrect) {
         return 'success.main';
@@ -140,16 +145,27 @@ const Quiz = ({ title, questions }: QuizProps) => {
                       )
                     })}
                   </Box>
-                  <Box sx={{ display: 'flex', justifyContent: 'flex-end', gap: 2 }}>
-                    <Button
-                      variant="outlined"
-                      onClick={handleRestartButton}
-                    >Restart<ReplayIcon fontSize="small" />
-                    </Button>
-                    <Button
-                      onClick={handleNextButton}
-                      sx={{ paddingInline: 4, color: 'primary.contrastText' }}
-                      variant="contained">Next</Button>
+                  <Box sx={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
+                    {clickedAnswerIndex !== null && <Button
+                      onClick={handleReadmoreButton}
+                      variant="text"
+                      color='secondary'
+                      sx={{ textTransform: "initial", color: theme => theme.palette.secondary.dark }}
+                    >
+                      Read more
+                    </Button>}
+                    <Box sx={{ flexGrow: 1 }} />
+                    <Box sx={{ display: 'flex', gap: 2 }}>
+                      <Button
+                        variant="outlined"
+                        onClick={handleRestartButton}
+                      >Restart<ReplayIcon fontSize="small" />
+                      </Button>
+                      <Button
+                        onClick={handleNextButton}
+                        sx={{ paddingInline: 4, color: 'primary.contrastText' }}
+                        variant="contained">Next</Button>
+                    </Box>
                   </Box>
                   <ProgressBar currentQuestion={currentQuestionIndex} totalQuestions={questions.length} />
                 </Box>
