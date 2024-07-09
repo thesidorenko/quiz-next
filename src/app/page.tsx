@@ -6,7 +6,7 @@ import quizzes from '@/api/quizzes.json';
 export default function Home() {
   return (
     <Container
-      maxWidth='lg'
+      maxWidth='md'
       sx={{
         display: 'flex',
         flexDirection: 'column',
