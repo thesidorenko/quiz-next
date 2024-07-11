@@ -7,7 +7,7 @@ It is a web-based quiz application built using Next.js and Material-UI. It allow
 - Material UI: React UI framework that implements Google's Material Design principles.
 - TypeScript: A superset of JavaScript that adds static typing, improving code readability and maintainability by catching potential errors during development.
 
-## For a preview of the project [click here](https://thesidorenko.github.io/quiz-next/).
+## For a preview of the project [click here](https://next-quiz-fgifcz24v-katerynas-projects-7f666e49.vercel.app/).
 
 ## Launch Instructions:
 1. Clone the repository and navigate into the project directory
